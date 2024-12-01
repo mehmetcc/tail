@@ -1,6 +1,5 @@
 package org.mehmetcc
 
-import org.mehmetcc.Endpoints._
 import sttp.client3.testing.SttpBackendStub
 import sttp.client3.{UriContext, basicRequest}
 import sttp.tapir.server.stub.TapirStubInterpreter
