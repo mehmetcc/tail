@@ -38,7 +38,7 @@ object ServerImpl {
 }
 
 final case class Endpoints(broadcast: Broadcast) {
-  private val health: ZServerEndpoint[Any, Any] = endpoint.get.in("k-tail" / "health").zServerLogic(_ => ZIO.unit)
+  private val health: ZServerEndpoint[Any, Any] = endpoint.get.in("tail" / "health").zServerLogic(_ => ZIO.unit)
 
   private val socket: ZServerEndpoint[Any, ZioStreams & WebSockets] =
     endpoint.get
